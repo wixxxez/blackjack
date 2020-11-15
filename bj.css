@@ -1,0 +1,283 @@
+html,body {
+    padding: 0;
+    margin: 0;
+}
+.main {
+    width:100%;
+    height: 100vh;
+    background-image:url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main2 {
+     width:100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+.main_menu {
+    width:350px;
+    height:0px;
+    background-color: black;
+    border: 5px solid yellow;
+    opacity: 1;
+    font-weight: bold;
+    font-family: fantasy,sans-serif;
+    display: flex;
+    justify-content: center;
+    
+    color:yellow;
+
+}
+.moew {
+    font-weight: bold;
+    font-family: fantasy,sans-serif;
+   color:yellow;
+}
+.game,.setting,.rules {
+    background-color: yellow;
+    color:black;
+    border:2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:200px;
+    height: 75px;
+    margin-bottom: 20px;
+    transition: 0.8s;
+    font-size: 25px;
+   
+}
+.game:hover, .setting:hover, .rules:hover {
+    background-color: black;
+    color:red;
+    border-radius: 25%;
+    border: 2px solid blue;
+    opacity: 1;
+}
+
+
+.setting_menu {
+    position: absolute;
+    width:0px;
+    height:0px;
+    background-color: yellow;
+    border: 6px solid red;
+    display: none;
+    justify-content: center;
+    border-radius: 5%;
+    
+}
+.navbar_up{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:35px;
+}
+.close_s {
+    width:40px;
+    height: 40px;
+    border:2px solid white;
+    background-color: red;
+    color:white;
+    font-size: 25px;
+    font-family: fantasy,sans-serif;
+    border-radius: 50%;
+    transition: 0.5s;
+    margin-top: -20px;
+}
+.close_s:hover {
+    background-color: white;color:red;border-color: red;
+}
+.cardb{
+    display: flex;
+    padding-left:10px;
+}
+.card1 {
+    width:96px;
+    margin-left: 20px;
+    height:140px;
+    background-image: url(colodes/coloda1/39.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:2px solid black;
+}
+.card2 {
+    width:96px;
+    margin-left: 20px;
+    height:140px;
+    background-image: url(colodes/coloda2/39.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:2px solid black;
+}
+.game_on {
+    z-index: 2;
+    display: none;
+   width: 0px;height: 0vh;
+    background-color: brown;
+    justify-content: center;
+}
+.navbar_g {
+     width:100%;
+    height:13.5vh;
+  background: rgb(36,15,0);
+background: linear-gradient(0deg, rgba(36,15,0,0.7094188017003676) 0%, rgba(255,132,0,0.2976540958180147) 51%, rgba(36,15,0,0.8354692218684349) 100%);
+    display: flex;
+    justify-content: space-between;align-items: center;
+}
+.exit_m {
+    width:75px;
+    height: 80px;
+    background-image: url(images/exit.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-left: 3px solid black;
+    transition: 1s;
+}
+.exit_m:hover {
+    border: 3px solid red;
+   display: flex;
+    justify-content: center;align-items: center;
+    color:black;
+    font-size: 25px;font-family: fantasy,sans-serif;font-weight: bold;
+    background: rgb(255,255,255);
+}
+
+.pole {
+    width:100%;height:100%;background-color: darkgreen;
+    background: rgb(48,108,7);
+background: radial-gradient(circle, rgba(48,108,7,1) 0%, rgba(83,140,47,1) 50%, rgba(48,108,7,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace,sans-serif;
+    
+}
+
+.coloda {
+    background-image: url(images/card.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width:250px;height:350px;
+    transform: translate(-150px,75px)
+}
+
+.card_1_e, .card_2_e,.card_3_e,.card_4_e,.card_5_e,.card_6_e,.card_7_e {
+    width:150px;
+    height: 200px;
+}
+.card_1_p, .card_2_p,.card_3_p,.card_4_p,.card_5_p,.card_6_p,.card_7_p {
+    width:150px;
+    height: 200px;
+}
+.card_enemy {
+    display: flex;
+  
+}
+.price1, .price2 {
+    display: flex;
+    align-items: center;justify-content: center;
+    width:75px;
+    height:75px;
+    background-color: gray;
+    color:white;
+    font-family: fantasy,sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50%;
+    transform: rotate(30deg);
+}
+.arrow_k {
+    width: 100px;
+    height: 100px;
+    background-image: url(images/rectangle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+    transition: 1.5s;
+    transform: rotate(-90deg);
+    display: flex;
+}
+
+.getCard {
+    width:100px;
+    height: 100px;
+    border: 2px solid gold;
+    border-radius: 50%;
+    background-color: black;
+    font-family: monospace,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 1s;
+    color: gold;
+}
+.StopCard {
+    width:100px;
+    height: 100px;
+    border: 2px solid gold;
+    border-radius: 50%;
+    background-color: black;
+    font-family: monospace,sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 1s;
+    color: gold;
+}
+.StopCard:hover,.getCard:hover {
+    background-color: darkred;
+    color: gold;
+}
+
+
+.winner_st_p, .winner_st_e {
+    font-size: 27px;
+    font-weight: bold;
+    font-family: fantasy,sans-serif;
+    color:black;
+    text-shadow: 2px 2px gold;
+    margin-top: 95px;
+    transform: rotate(37deg);
+    transition: 1s;
+}
+
+
+.play_again {
+    position: absolute;
+    width: 100%;
+    height:100vh;
+    background-color: black;
+    opacity: 0.9;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
+.again {
+    width:150px;
+    height: 100px;
+    background-color: aqua;
+    border: 2px solid blue;
+    font-family: fantasy,sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 1s;
+    z-index: 9999
+}
+.again:hover {
+    
+    border-radius: 20%;
+    box-shadow: 5px 10px blue;
+    color:red;
+    border-color: red;
+     
+}
+.win {
+    font-weight: bold;
+    font-size:72px;
+    color:gold;
+    text-shadow: 2.5px 2.5px darkgoldenrod;
+}
