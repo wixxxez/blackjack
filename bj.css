@@ -114,6 +114,15 @@ html,body {
     background-size: contain;
     border:2px solid black;
 }
+.card3 {
+    width:96px;
+    margin-left: 20px;
+    height:140px;
+    background-image: url(colodes/coloda3/39.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:2px solid black;
+}
 .game_on {
     z-index: 2;
     display: none;
